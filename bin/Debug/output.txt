@@ -1,0 +1,153 @@
+TOKENS : T_Include | T_Libreria | T_Void | T_Main | T_AbrePar | T_CierraPar | T_AbreLlave | T_CierraLLave | T_Fin | 
+
+PILA : INICIO T_Fin 
+Tabla [INICIO][T_Include] = 1
+Regla Aplicada :
+	INICIO -> A G 
+
+PILA : A G T_Fin 
+=======================================================================================================
+TOKENS : T_Include | T_Libreria | T_Void | T_Main | T_AbrePar | T_CierraPar | T_AbreLlave | T_CierraLLave | T_Fin | 
+
+PILA : A G T_Fin 
+Tabla [A][T_Include] = 3
+Regla Aplicada :
+	A -> INCLUDE AP 
+
+PILA : INCLUDE AP G T_Fin 
+=======================================================================================================
+TOKENS : T_Include | T_Libreria | T_Void | T_Main | T_AbrePar | T_CierraPar | T_AbreLlave | T_CierraLLave | T_Fin | 
+
+PILA : INCLUDE AP G T_Fin 
+Tabla [INCLUDE][T_Include] = 12
+Regla Aplicada :
+	INCLUDE -> T_Include X 
+
+PILA : T_Include X AP G T_Fin 
+=======================================================================================================
+TOKENS : T_Include | T_Libreria | T_Void | T_Main | T_AbrePar | T_CierraPar | T_AbreLlave | T_CierraLLave | T_Fin | 
+
+PILA : T_Include X AP G T_Fin 
+tos == lookahead
+
+PILA : X AP G T_Fin 
+=======================================================================================================
+TOKENS : T_Libreria | T_Void | T_Main | T_AbrePar | T_CierraPar | T_AbreLlave | T_CierraLLave | T_Fin | 
+
+PILA : X AP G T_Fin 
+Tabla [X][T_Libreria] = 15
+Regla Aplicada :
+	X -> T_Libreria 
+
+PILA : T_Libreria AP G T_Fin 
+=======================================================================================================
+TOKENS : T_Libreria | T_Void | T_Main | T_AbrePar | T_CierraPar | T_AbreLlave | T_CierraLLave | T_Fin | 
+
+PILA : T_Libreria AP G T_Fin 
+tos == lookahead
+
+PILA : AP G T_Fin 
+=======================================================================================================
+TOKENS : T_Void | T_Main | T_AbrePar | T_CierraPar | T_AbreLlave | T_CierraLLave | T_Fin | 
+
+PILA : AP G T_Fin 
+Tabla [AP][T_Void] = 11
+Regla Aplicada :
+	AP -> e 
+
+PILA : G T_Fin 
+=======================================================================================================
+TOKENS : T_Void | T_Main | T_AbrePar | T_CierraPar | T_AbreLlave | T_CierraLLave | T_Fin | 
+
+PILA : G T_Fin 
+Tabla [G][T_Void] = 2
+Regla Aplicada :
+	G -> DFUNCION CUERPO CFUNCION 
+
+PILA : DFUNCION CUERPO CFUNCION T_Fin 
+=======================================================================================================
+TOKENS : T_Void | T_Main | T_AbrePar | T_CierraPar | T_AbreLlave | T_CierraLLave | T_Fin | 
+
+PILA : DFUNCION CUERPO CFUNCION T_Fin 
+Tabla [DFUNCION][T_Void] = 109
+Regla Aplicada :
+	J -> e 
+
+PILA : CUERPO CFUNCION T_Fin 
+=======================================================================================================
+TOKENS : T_Void | T_Main | T_AbrePar | T_CierraPar | T_AbreLlave | T_CierraLLave | T_Fin | 
+
+PILA : CUERPO CFUNCION T_Fin 
+Tabla [CUERPO][T_Void] = 31
+Regla Aplicada :
+	CUERPO -> T_Void T_Main T_AbrePar T_CierraPar T_AbreLlave LISTASENTENCIAS T_CierraLLave 
+
+PILA : T_Void T_Main T_AbrePar T_CierraPar T_AbreLlave LISTASENTENCIAS T_CierraLLave CFUNCION T_Fin 
+=======================================================================================================
+TOKENS : T_Void | T_Main | T_AbrePar | T_CierraPar | T_AbreLlave | T_CierraLLave | T_Fin | 
+
+PILA : T_Void T_Main T_AbrePar T_CierraPar T_AbreLlave LISTASENTENCIAS T_CierraLLave CFUNCION T_Fin 
+tos == lookahead
+
+PILA : T_Main T_AbrePar T_CierraPar T_AbreLlave LISTASENTENCIAS T_CierraLLave CFUNCION T_Fin 
+=======================================================================================================
+TOKENS : T_Main | T_AbrePar | T_CierraPar | T_AbreLlave | T_CierraLLave | T_Fin | 
+
+PILA : T_Main T_AbrePar T_CierraPar T_AbreLlave LISTASENTENCIAS T_CierraLLave CFUNCION T_Fin 
+tos == lookahead
+
+PILA : T_AbrePar T_CierraPar T_AbreLlave LISTASENTENCIAS T_CierraLLave CFUNCION T_Fin 
+=======================================================================================================
+TOKENS : T_AbrePar | T_CierraPar | T_AbreLlave | T_CierraLLave | T_Fin | 
+
+PILA : T_AbrePar T_CierraPar T_AbreLlave LISTASENTENCIAS T_CierraLLave CFUNCION T_Fin 
+tos == lookahead
+
+PILA : T_CierraPar T_AbreLlave LISTASENTENCIAS T_CierraLLave CFUNCION T_Fin 
+=======================================================================================================
+TOKENS : T_CierraPar | T_AbreLlave | T_CierraLLave | T_Fin | 
+
+PILA : T_CierraPar T_AbreLlave LISTASENTENCIAS T_CierraLLave CFUNCION T_Fin 
+tos == lookahead
+
+PILA : T_AbreLlave LISTASENTENCIAS T_CierraLLave CFUNCION T_Fin 
+=======================================================================================================
+TOKENS : T_AbreLlave | T_CierraLLave | T_Fin | 
+
+PILA : T_AbreLlave LISTASENTENCIAS T_CierraLLave CFUNCION T_Fin 
+tos == lookahead
+
+PILA : LISTASENTENCIAS T_CierraLLave CFUNCION T_Fin 
+=======================================================================================================
+TOKENS : T_CierraLLave | T_Fin | 
+
+PILA : LISTASENTENCIAS T_CierraLLave CFUNCION T_Fin 
+Tabla [LISTASENTENCIAS][T_CierraLLave] = 33
+Regla Aplicada :
+	LISTASENTENCIAS -> e 
+
+PILA : T_CierraLLave CFUNCION T_Fin 
+=======================================================================================================
+TOKENS : T_CierraLLave | T_Fin | 
+
+PILA : T_CierraLLave CFUNCION T_Fin 
+tos == lookahead
+
+PILA : CFUNCION T_Fin 
+=======================================================================================================
+TOKENS : T_Fin | 
+
+PILA : CFUNCION T_Fin 
+Tabla [CFUNCION][T_Fin] = 110
+Regla Aplicada :
+	X -> e 
+
+PILA : T_Fin 
+=======================================================================================================
+TOKENS : T_Fin | 
+
+PILA : T_Fin 
+ACEPTADA
+
+PILA : T_Fin 
+=======================================================================================================

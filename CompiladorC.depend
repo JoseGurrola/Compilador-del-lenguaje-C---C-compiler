@@ -1,0 +1,193 @@
+# depslib dependency file v1.0
+1492578758 source:c:\users\toshiba\desktop\compiladorc\src\scanner.cpp
+	"Scanner.h"
+
+1492117470 c:\users\toshiba\desktop\compiladorc\include\scanner.h
+	<iostream>
+	<fstream>
+	<cstdlib>
+
+1492117470 source:c:\users\toshiba\desktop\compiladorc\main.cpp
+	<iostream>
+	"Scanner.h"
+
+1492117470 source:c:\users\toshiba\desktop\compiladorc - copia\main.cpp
+	<iostream>
+	"Scanner.h"
+
+1492716199 c:\users\toshiba\desktop\compiladorc - copia\include\scanner.h
+	<iostream>
+	<fstream>
+	<cstdlib>
+
+1492716932 source:c:\users\toshiba\desktop\compiladorc - copia\src\scanner.cpp
+	"Scanner.h"
+
+1494213629 source:c:\users\toshiba\desktop\compiladorc - copia - copia\main.cpp
+	<iostream>
+	"Scanner.h"
+
+1494218293 c:\users\toshiba\desktop\compiladorc - copia - copia\include\scanner.h
+	<iostream>
+	<fstream>
+	<cstdlib>
+
+1494218293 source:c:\users\toshiba\desktop\compiladorc - copia - copia\src\scanner.cpp
+	"Scanner.h"
+
+1494213629 source:c:\users\toshiba\desktop\compiladorc0805\main.cpp
+	<iostream>
+	"Scanner.h"
+
+1494218293 c:\users\toshiba\desktop\compiladorc0805\include\scanner.h
+	<iostream>
+	<fstream>
+	<cstdlib>
+
+1494360644 source:c:\users\toshiba\desktop\compiladorc0805\src\scanner.cpp
+	"Scanner.h"
+
+1494213629 source:c:\users\toshiba\desktop\compiladorc0905\main.cpp
+	<iostream>
+	"Scanner.h"
+
+1494218293 c:\users\toshiba\desktop\compiladorc0905\include\scanner.h
+	<iostream>
+	<fstream>
+	<cstdlib>
+
+1494213629 source:c:\users\toshiba\desktop\compiladorc1005\main.cpp
+	<iostream>
+	"Scanner.h"
+
+1494218293 c:\users\toshiba\desktop\compiladorc1005\include\scanner.h
+	<iostream>
+	<fstream>
+	<cstdlib>
+
+1494560048 source:c:\users\toshiba\desktop\compiladorc1005\src\scanner.cpp
+	"Scanner.h"
+
+1495664275 source:d:\2017-1\compiladores\compiladorc1105\main.cpp
+	<iostream>
+	"Scanner.h"
+
+1495663377 d:\2017-1\compiladores\compiladorc1105\include\scanner.h
+	<fstream>
+	"Pila.h"
+	"Simbolo.h"
+	"Regla.h"
+	"Excepciones.h"
+
+1495677653 source:d:\2017-1\compiladores\compiladorc1105\src\scanner.cpp
+	"Scanner.h"
+
+1494878808 source:d:\2017-1\compiladores\compiladorc1105\src\pila.cpp
+	"Pila.h"
+
+1495659929 d:\2017-1\compiladores\compiladorc1105\include\pila.h
+	<iostream>
+	<cstdlib>
+	<cstring>
+
+1495659584 d:\2017-1\compiladores\compiladorc1105\include\simbolo.h
+	<iostream>
+
+1495408517 source:d:\2017-1\compiladores\compiladorc1105\src\simbolo.cpp
+	"Simbolo.h"
+
+1495731677 source:g:\2017-1\compiladores\compiladorc1105\main.cpp
+	<iostream>
+	"Scanner.h"
+
+1495663377 g:\2017-1\compiladores\compiladorc1105\include\scanner.h
+	<fstream>
+	"Pila.h"
+	"Simbolo.h"
+	"Regla.h"
+	"Excepciones.h"
+
+1495659929 g:\2017-1\compiladores\compiladorc1105\include\pila.h
+	<iostream>
+	<cstdlib>
+	<cstring>
+
+1494878808 source:g:\2017-1\compiladores\compiladorc1105\src\pila.cpp
+	"Pila.h"
+
+1495677653 source:g:\2017-1\compiladores\compiladorc1105\src\scanner.cpp
+	"Scanner.h"
+
+1495407410 source:d:\2017-1\compiladores\compiladorc1105\src\regla.cpp
+	"Regla.h"
+
+1495658806 d:\2017-1\compiladores\compiladorc1105\include\regla.h
+	"Simbolo.h"
+
+1495659584 g:\2017-1\compiladores\compiladorc1105\include\simbolo.h
+	<iostream>
+
+1495407410 source:g:\2017-1\compiladores\compiladorc1105\src\regla.cpp
+	"Regla.h"
+
+1495658806 g:\2017-1\compiladores\compiladorc1105\include\regla.h
+	"Simbolo.h"
+
+1495408517 source:g:\2017-1\compiladores\compiladorc1105\src\simbolo.cpp
+	"Simbolo.h"
+
+1495653301 source:d:\2017-1\compiladores\compiladorc1105\src\excepcion.cpp
+	"Excepcion.h"
+
+1495653308 d:\2017-1\compiladores\compiladorc1105\include\excepcion.h
+	<cstring>
+
+1495656722 d:\2017-1\compiladores\compiladorc1105\include\exception.h
+	<exception>
+
+1495656665 source:d:\2017-1\compiladores\compiladorc1105\src\exception.cpp
+	"Exception.h"
+
+1495658169 d:\2017-1\compiladores\compiladorc1105\include\excepciones.h
+	<iostream>
+
+1495658169 g:\2017-1\compiladores\compiladorc1105\include\excepciones.h
+	<iostream>
+
+1519673075 source:c:\users\kikiu\desktop\kikiu11\unison\2017-1\compiladores\compiladorc1105\main.cpp
+	<iostream>
+	"Scanner.h"
+
+1519671893 c:\users\kikiu\desktop\kikiu11\unison\2017-1\compiladores\compiladorc1105\include\scanner.h
+	<fstream>
+	"Pila.h"
+	"Simbolo.h"
+	"Regla.h"
+	"Excepciones.h"
+
+1495659929 c:\users\kikiu\desktop\kikiu11\unison\2017-1\compiladores\compiladorc1105\include\pila.h
+	<iostream>
+	<cstdlib>
+	<cstring>
+
+1495659584 c:\users\kikiu\desktop\kikiu11\unison\2017-1\compiladores\compiladorc1105\include\simbolo.h
+	<iostream>
+
+1495658806 c:\users\kikiu\desktop\kikiu11\unison\2017-1\compiladores\compiladorc1105\include\regla.h
+	"Simbolo.h"
+
+1495658169 c:\users\kikiu\desktop\kikiu11\unison\2017-1\compiladores\compiladorc1105\include\excepciones.h
+	<iostream>
+
+1494878808 source:c:\users\kikiu\desktop\kikiu11\unison\2017-1\compiladores\compiladorc1105\src\pila.cpp
+	"Pila.h"
+
+1495407410 source:c:\users\kikiu\desktop\kikiu11\unison\2017-1\compiladores\compiladorc1105\src\regla.cpp
+	"Regla.h"
+
+1519671764 source:c:\users\kikiu\desktop\kikiu11\unison\2017-1\compiladores\compiladorc1105\src\scanner.cpp
+	"Scanner.h"
+
+1495408517 source:c:\users\kikiu\desktop\kikiu11\unison\2017-1\compiladores\compiladorc1105\src\simbolo.cpp
+	"Simbolo.h"
+
